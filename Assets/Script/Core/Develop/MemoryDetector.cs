@@ -3,10 +3,12 @@ using System.Collections;
 #if UNITY_5_5_OR_NEWER
 using UnityEngine.Profiling;
 #endif
-	/// <summary>
-	/// 内存检测器，目前只是输出Profiler信息
-	/// </summary>
-	public class MemoryDetector 
+
+#pragma warning disable
+/// <summary>
+/// 内存检测器，目前只是输出Profiler信息
+/// </summary>
+public class MemoryDetector 
 	{
 		private readonly static string TotalAllocMemroyFormation = "Alloc Memory : {0}M";
 		private readonly static string TotalReservedMemoryFormation = "Reserved Memory : {0}M";
